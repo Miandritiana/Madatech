@@ -1,23 +1,23 @@
 <nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]='this.pageYPosition>0'>
     <div class="container">
         <a class="navbar-brand text-light" [routerLink]="'inicio'">
-            <img src='assets/images/logo.png' width='100' />
+            <img src='assets/images/logo.png' width='100'/>
         </a>
         <ul ngbNav #nav="ngbNav" class="menu-ul">
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_about", "menu", "click")'>
-                <a ngbNavLink (click)='scroll("about")'> <span class="underline nav-text"> {{"Header.Item1" | translate}}</span></a>
+                <a ngbNavLink (click)='scroll("about")'> <span class="underline nav-text"> Acceuil</span></a>
                 <ng-template ngbNavContent>First content</ng-template>
             </li>
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_experience", "menu", "click")'>
-                <a ngbNavLink (click)='scroll("jobs")'> <span class="underline nav-text"> {{"Header.Item2" | translate}}</span></a>
+                <a ngbNavLink (click)='scroll("jobs")'> <span class="underline nav-text"> A propos</span></a>
                 <ng-template ngbNavContent>Second content</ng-template>
             </li>
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_jobs", "menu", "click")'>
-                <a ngbNavLink (click)='scroll("proyects")'> <span class="underline nav-text"> {{"Header.Item3" | translate}}</span></a>
+                <a ngbNavLink (click)='scroll("proyects")'> <span class="underline nav-text"> Nos valeurs</span></a>
                 <ng-template ngbNavContent>Second content</ng-template>
             </li>
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
-                <a ngbNavLink (click)='scroll("contact")'> <span class="underline nav-text"> {{"Header.Item4" | translate}}</span></a>
+                <a ngbNavLink (click)='scroll("contact")'> <span class="underline nav-text"> Contact</span></a>
                 <ng-template ngbNavContent>Second content</ng-template>
             </li>
         </ul>
