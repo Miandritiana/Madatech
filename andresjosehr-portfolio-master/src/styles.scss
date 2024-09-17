@@ -70,9 +70,8 @@ body {
 }
 
 .main-btn {
-  color: $Green;
-  background-color: transparent;
-  border: 1px solid $Green;
+  color: $Blue;
+  background-color: $Green;
   border-radius: 3px;
   font-size: 13px;
   font-family: $CodeFont;
@@ -87,8 +86,10 @@ body {
   &:hover,
   &:focus,
   &:active {
-    background-color: rgba(100, 255, 218, 0.07);
-    outline: none;
+    background-color: transparent;
+    border: 1px solid $Green;
+    color: $Green;
+    text-decoration: none;
   }
 }
 

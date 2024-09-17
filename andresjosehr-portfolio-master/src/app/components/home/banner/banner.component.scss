@@ -1,61 +1,165 @@
 
 @import "./../../../../variables.scss";
 
-.banner{
+.banner {
     min-height: 100vh;
-    
-    .container{
-        display: table;
-        height: 100vh;
-
-        .section-box-banner{
-            display: table-cell;
-            vertical-align: middle;
-
-            .content{
-                margin-top: 98px;
-            }
-
-            h1{
-    
-                color: #64ffda;
-                margin: 0 0 20px 3px;
-                font-size: 16px;
-                font-weight: normal;
-                font-family: $CodeFont;
-            }
-
-            h2, h3 {
-                font-weight: 600;
-                font-size: 80px;
-                line-height: 1.1;
-                margin: 0;
-                font-family: $MainFont;
-            }
-
-            h2{
-                color: $LightestSlate;
-            }
-            h3{  
-                color: $Slate;
-            }
-
-            .banner-description{
-                margin-bottom: 70px;
-            }
-
-            p{
-                max-width: 500px;
-            }
-
-            .div-btn-banner{
-                height: 43px;
-            }
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      flex-wrap: nowrap;
+  
+      .section-box-banner {
+        flex: 1;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+        .content {
+          margin-top: 98px;
         }
-
-       
-    }    
-}
-
+  
+        h1 {
+          color: #64ffda;
+          margin: 0 0 20px 3px;
+          font-size: 16px;
+          font-weight: normal;
+          font-family: $CodeFont;
+        }
+  
+        h2,
+        h3 {
+          font-weight: 600;
+          font-size: 80px;
+          line-height: 1.1;
+          margin: 0;
+          font-family: $MainFont;
+        }
+  
+        h2 {
+          color: $LightestSlate;
+        }
+  
+        h3 {
+          color: $Slate;
+        }
+  
+        .banner-description {
+          margin-bottom: 70px;
+        }
+  
+        p {
+          max-width: 500px;
+        }
+  
+        .div-btn-banner {
+          height: 43px;
+          text-decoration: none;
+        }
+      }
+    }
+  
+    .about-img-container {
+      margin: auto;
+      flex: 1;
+      flex-shrink: 1;
+      text-align: center;
+  
+      &:after {
+        content: '';
+        z-index: 0;
+        display: block;
+        position: relative;
+        width: 394px;
+        height: 305px;
+        bottom: 290px;
+        left: 23px;
+      }
+  
+      img {
+        margin-top: 50%;
+        width: 1100px;
+        height: auto;
+        z-index: 2;
+        position: relative;
+      }
+      
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1300px) {
+    .about-img-container {
+      margin-left: auto;
+      margin-right: 0;
+      img {
+        width: 800px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .section-box-banner {
+      margin-bottom: 40px;
+      text-align: center;
+  
+      h2,
+      h3 {
+        font-size: 40px;
+      }
+  
+      .banner-description {
+        margin-bottom: 40px;
+      }
+    }
+  
+    .about-img-container {
+      img {
+        width: 600px;
+      }
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+    }
+  
+    .section-box-banner {
+      text-align: center;
+  
+      h2,
+      h3 {
+        font-size: 30px;
+      }
+  
+      .banner-description {
+        margin-bottom: 30px;
+      }
+    }
+  
+    .about-img-container {
+      img {
+        width: 200px;
+        height: auto;
+      }
+  
+      &:after {
+        display: none;
+      }
+    }
+  }
+  
 
 

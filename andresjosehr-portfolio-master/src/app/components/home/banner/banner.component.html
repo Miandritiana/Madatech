@@ -2,30 +2,30 @@
     <div [@bannerTrigger] class="container">
         <!-- <div class="row"> -->
             <!-- <div class="col-6"> -->
-                <div class="section-box-banner">
+                <div class="col-6 section-box-banner d-flex">
                     <div class="content">
                         <div>
                             <h1>Hello! It's Madatech</h1>
                         </div>
                         <div class='banner-title'>
-                            <h2 color="white">Transformons vos idées en réalité numérique.</h2>
+                            <h2>Transformons vos idées en réalité numérique.</h2>
                         </div>
                         <div class='banner-description'>
-                            <p class="mt-4" color="white">Le meilleur qualité au meilleur prix.</p>
+                            <p class="mt-4">Le meilleur qualité au meilleur prix.</p>
                         </div>
                     </div>
-                    <div class="div-btn-banner">
-                        <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "banner", "email")' href="mailto:andresjosehr@gmail.com" target="_black" class="main-btn">
+                    <div class="div-btn-banner" (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
+                        <a (click)='scroll("contact")' target="_black" class="main-btn">
                             Contactez nous
                         </a>
                     </div>
                 </div>
             <!-- </div> -->
-            <!-- <div class="col-6 text-center" data-aos="fade-up" data-aos-duration="1000">
-                <div class="about-img-container">
-                    <img (click)='analyticsService.sendAnalyticEvent("click_image", "about", "image")' class="rounded" width="400" height="300" src="assets/images/3dImg/pikaso no bg.png" alt="José Andrés">
+            <div class="about-img-container col-6 text-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="">
+                    <img class="rounded" width="400" height="300" src="assets/images/3dImg/pikaso no bg.png">
                 </div>
-            </div> -->
+            </div>
         <!-- </div> -->
     </div>
 </section>

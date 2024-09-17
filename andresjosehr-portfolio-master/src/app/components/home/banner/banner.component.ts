@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 import {trigger, state, style, animate, transition, stagger, query } from "@angular/animations"
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
@@ -25,14 +26,23 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 })
 export class BannerComponent implements OnInit {
 
+  responsiveMenuVisible: Boolean = false;
   
 
   constructor(
-    public analyticsService: AnalyticsService
+    public analyticsService: AnalyticsService,
+    private router: Router
   ) { }
 
   ngOnInit(): void { 
   }
   
-
+  scroll(el) {
+    if(document.getElementById(el)) {
+      document.getElementById(el).scrollIntoView({behavior: 'smooth'});
+    } else{
+      this.router.navigate(['/home']).then(()=> document.getElementById(el).scrollIntoView({behavior: 'smooth'}) );
+    }
+    this.responsiveMenuVisible=false;
+  }
 }
