@@ -5,7 +5,7 @@
                 <div class="col-6 section-box-banner d-flex">
                     <div class="content">
                         <div>
-                            <h1>Hello! It's Madatech</h1>
+                            <h1>{{"Banner.Pretitle" | translate}}</h1>
                         </div>
                         <div class='banner-title'>
                             <h3>Transformons vos idées en réalité numérique.</h3>
@@ -16,14 +16,14 @@
                     </div>
                     <div class="div-btn-banner" (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
                         <a (click)='scroll("contact")' target="_black" class="main-btn">
-                            Contactez nous
+                            {{"Banner.ActionBtn" | translate}}
                         </a>
                     </div>
                 </div>
             <!-- </div> -->
             <div class="about-img-container col-6 text-center" data-aos="fade-up" data-aos-duration="1000">
                 <div class="">
-                    <img class="rounded" width="400" height="300" src="assets/images/3dImg/pikaso no bg.png">
+                    <img class="rounded" width="400" src="assets/images/3dImg/pikaso no bg.png">
                 </div>
             </div>
         <!-- </div> -->
