@@ -34,7 +34,8 @@
             border-radius: 3px;
             -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
             transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-            background-color: $LightNavy;
+            // background-color: $LightNavy;
+            border: 1px solid $Green;
             cursor: pointer;
 
             &:hover {
@@ -53,9 +54,10 @@
             }
 
             .other-proyect-title{
-                margin: 0 0 10px;
-                font-size: 22px;
-                color: $LightestSlate;
+                margin: 0 0 20px;
+                font-size: 24px;
+                color: $Green;
+                font-family: $MainFont;
             }
 
             .other-proyect-description{

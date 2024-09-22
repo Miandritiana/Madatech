@@ -31,6 +31,11 @@
     }
   ],
 
+  "FeatureProjects.Title": "Subscribe",
+  "FeatureProjects.Label": "Abonnez-vous à notre newsletter",
+  "FeatureProjects.Descritpion": "Restez informé des dernières innovations et des solutions personnalisées que nous offrons. Entrez votre email ci-dessous pour ne rien manquer.",
+  "FeatureProjects.ActionBtn": "Subscribe",
+
   "Contact.Pretitle": "Vous avez un projet en tête ou une question?",
   "Contact.Title": "Contact",
   "Contact.Content": "Contactez-nous dès maintenant pour discuter de vos besoins!",
