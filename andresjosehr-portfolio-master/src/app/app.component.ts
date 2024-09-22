@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'andresjosehr-portfolio';
+  title = 'madatech';
   
   constructor(
     private titleService: Title,
@@ -27,11 +27,11 @@ export class AppComponent implements OnInit{
     this.languageService.initLanguage()
 
 
-    this.titleService.setTitle( "José Andrés | Frontend Developer" );
+    this.titleService.setTitle( "Madatech Madagascar" );
 
     this.metaService.addTags([
       {name: 'keywords', content: 'Frontend, software, developer'},
-      {name: 'description', content: 'Con 4 años de experiencia desarrollando sistemas, interfaces, bots y soluciones tecnológicas  para hacer de la web un lugar mejor. En mi trabajo me gusta liderar, proponer y ejecutar ideas, escribir y refactorizar código limpio, reutilizable y escalable.'},
+      {name: 'description', content: 'Avec 4 ans d\'expérience dans le développement de systèmes, d\'interfaces, de bots et de solutions technologiques, je m\'efforce de rendre le web plus performant et accessible. Passionné par la conception et l\'amélioration continue, j\'aime diriger, proposer et exécuter des idées novatrices, tout en veillant à écrire et refactoriser du code propre, réutilisable et évolutif.'},
     ]);
     
     
