@@ -8,11 +8,23 @@
         <h4 class="e-font contact-title big-title">
           {{ "Contact.Title" | translate }}
         </h4>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          {{ "Contact.Content" | translate }}
+        </p>
       </div>
-      <p data-aos="fade-up" data-aos-duration="1000">
-        {{ "Contact.Content" | translate }}
-      </p>
       <div class="mt-5">
+        <div class="row justify-content-center">
+          <div class="col-auto" *ngFor="let contact of 'Contact.contacts' | translate">
+            <div class="contact-item d-flex align-items-center">
+              <i class="fas" [ngClass]="{
+                'fa-phone': contact.Icon === 'phone',
+                'fa-map-marker-alt': contact.Icon === 'localisation',
+                'fa-envelope': contact.Icon === 'mail'
+              }"></i>
+              <span class="ms-2 text-white">{{ contact.content }}</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
