@@ -12,16 +12,16 @@
           {{ "Contact.Content" | translate }}
         </p>
       </div>
-      <div class="mt-5">
-        <div class="row justify-content-center">
-          <div class="col-auto" *ngFor="let contact of 'Contact.contacts' | translate">
-            <div class="contact-item d-flex align-items-center">
-              <i class="fas" [ngClass]="{
+      <div class="mt-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row justify-content-center flex-nowrap" >
+          <div class="col-auto" *ngFor="let contact of 'Contact.contacts' | translate" >
+            <div class="contact-item d-flex align-items-center mb-5">
+              <i class="fas fa-2x" [ngClass]="{
                 'fa-phone': contact.Icon === 'phone',
                 'fa-map-marker-alt': contact.Icon === 'localisation',
                 'fa-envelope': contact.Icon === 'mail'
               }"></i>
-              <span class="ms-2 text-white">{{ contact.content }}</span>
+              <span class="ms-2 text-white contact-content"> {{ contact.content }}</span>
             </div>
           </div>
         </div>

@@ -203,5 +203,37 @@ a {
   }
 }
 
+
+
+
+
+/* WebKit Browsers */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161F48;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #47DBDE;
+  border-radius: 80px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #47DBDE;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #47DBDE #161F48;
+}
+
+
+
+
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
