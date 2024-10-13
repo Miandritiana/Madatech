@@ -1,16 +1,12 @@
 <footer>
     <div [@animateFooter]>
         <ul class="footer-left-bar d-none d-md-block">
-            <li>
-                <a href="#" target='_blank'>
+            <!-- <li>
                     <i class="fab fa-github"></i>
-                </a>
-            </li>
+            </li>-->
             <li>
-                <a href="#" target='_blank'>
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
+                    <i class="fab fa-facebook"></i>
+            </li> 
         </ul>
         <div class="footer-right-bar d-none d-md-block">
             <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "footer", "email")' href="mailto:mbolatiana.r@gmail.com" target='_blank'>mbolatiana.r&#64;madatech.com </a>
