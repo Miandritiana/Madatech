@@ -5,7 +5,7 @@
         </a>
         <ul ngbNav #nav="ngbNav" class="menu-ul">
             <li ngbNavItem [routerLink]="'inicio'">
-                <a ngbNavLink> <span class="underline nav-text"> {{"Header.Item1" | translate}}</span></a>
+                <a ngbNavLink (click)='scroll("banner")'> <span class="underline nav-text"> {{"Header.Item1" | translate}}</span></a>
                 <ng-template ngbNavContent>First content</ng-template>
             </li>
             <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_experience", "menu", "click")'>
